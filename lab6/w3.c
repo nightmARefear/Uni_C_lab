@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 5
+#define N 5 /* Lines - Collumns of board */
 
 int main()
 {
@@ -14,11 +14,11 @@ int main()
             scanf("%d", &A[i][j]);
     }
 
-    for (i=0; i<N; i++)
+    for (i=0; i<N; i++) /* Zero datas */
         for (j=0; j<N; j++)
             if (A[i][j] == 0)
                 zero++;
-    for (i=0; i<N; i++)
+    for (i=0; i<N; i++) /* Greater than zero */
         if (A[i][i] !=0)
             notzero++;
     printf("\n\nZero datas: %d", zero);

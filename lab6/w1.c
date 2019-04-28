@@ -1,6 +1,6 @@
 #include <stdio.h>
-#define N 7
-#define M 12
+#define N 7 /* Days */
+#define M 12 /*12 hrs day */
 
 int main()
 {

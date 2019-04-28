@@ -18,10 +18,10 @@ int main()
         scanf("%d", &b[i]);
     }
 
-    for (i=0; i<N; i++)
+    for (i=0; i<N; i++) /* Input of first board */
         c[i] = a[i];
 
-    for (i=N; i<N+M; i++)
+    for (i=N; i<N+M; i++) /* Input of second board */
         c[i] = b[i-N];
 
     for (i=0; i<N+M; i++)

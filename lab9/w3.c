@@ -7,12 +7,14 @@ int main()
     int i, x, t;
     printf("\nEnter table size:");
     scanf("%d", &N);
+    /* Define board */
     megethos = N * sizeof(int);
     A = malloc(megethos);
     if (A == NULL ) {
         printf("\n\nOut of scopem terminating....\n\n");
         return -1;
     }
+    /* Random register 1 --> 100 */
     srand(time(NULL));
     for (i=0; i<N; i++)
         A[i] = rand()%100+1;

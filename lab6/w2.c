@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define N 3
+#define N 3 /* Lines - Collumns of board */
 
 int main()
 {

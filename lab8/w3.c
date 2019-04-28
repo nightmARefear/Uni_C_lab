@@ -1,9 +1,9 @@
 #include <stdio.h>
 #define N 3
 struct country {
-    char name[20];
-    int popul;
-    char capital[20];
+    char name[20]; /* Country */
+    int popul; /* Population */
+    char capital[20]; /* Capital city */
 };
 int main()
 {
