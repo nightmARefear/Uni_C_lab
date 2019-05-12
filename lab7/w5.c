@@ -6,8 +6,8 @@ int main()
     int number, guess, counter=0;
     srand(time(NULL));
     number = rand()%50 + 1;
-    printf("\n\nAI have a number aroun 1 and 50.");
-    printf("\nCan u guess it?");
+    printf("\n\nI have a number between 1 and 50.");
+    printf("\nCan you guess it?");
     do {
         printf("\n Guess:");
         scanf("%d", &guess);
@@ -19,6 +19,6 @@ int main()
         else
             printf("\n\nTry harder, noob.");
     } while (guess != number);
-    printf("\n\%d attempt(s)", counter);
+    printf("\n%d attempt(s)", counter);
     return 0;
 }
