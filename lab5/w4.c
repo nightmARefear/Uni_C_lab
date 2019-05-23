@@ -6,7 +6,9 @@ int main()
 {
 
     char s[N];
-    int l, i, gr=0, fon=0;
+    int l, i;
+    int vol = 0; // vowels
+    int lt = 0;  // letters
 
     printf("\nEnter a sentence (english caps ONLY):");
     gets(s);
@@ -26,12 +28,12 @@ int main()
             case 'I':
             case 'U':
             case 'Y':
-                fon++;
+                vol++;
             }
         }
 
-    printf("\n\nLetter(s) = %d", gr);
-    printf("\n\nVowel(s) = %d\n\n", fon);
+    printf("\n\nLetter(s) = %d", lt);
+    printf("\n\nVowel(s) = %d\n\n", vol);
 
-    return 0;
+    return EXIT_SUCCESS;
 }
